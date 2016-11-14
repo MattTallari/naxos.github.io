@@ -74,12 +74,21 @@ px      68    160    252    344    436    528    620    712    */
     border-radius: 10px;
   }
   /*--
-    price Start
+    price BREAKFAST Start
 --*/
-  #price .block p {
+  #price1 .block p {
     padding: 30px 0 0;
   }
-  #price .block .pricing-list {
+  #price1 .block .pricing-list {
+    text-align: left;
+  }
+  /*--
+    price DINNER Start
+--*/
+  #price2 .block p {
+    padding: 30px 0 0;
+  }
+  #price2 .block .pricing-list {
     text-align: left;
   }
   /*--
@@ -272,24 +281,48 @@ px      68    160    252    */
   /*--
     price Start
 --*/
-  #price .block p {
+  #price1 .block p {
     padding: 40px 0px 0px;
   }
-  #price .block .pricing-list {
+  #price1 .block .pricing-list {
     text-align: left;
   }
-  #price .block .pricing-list ul li .item {
+  #price1 .block .pricing-list ul li .item {
     float: none;
   }
-  #price .block .pricing-list ul li .item .item-title .border-bottom {
+  #price1 .block .pricing-list ul li .item .item-title .border-bottom {
     display: none;
   }
-  #price .block .pricing-list ul li .item .item-title span {
+  #price1 .block .pricing-list ul li .item .item-title span {
     padding-top: 10px;
     display: block;
     float: none;
   }
-  #price .block .pricing-list .btn {
+  #price1 .block .pricing-list .btn {
+    float: inherit;
+    padding: 28px 100px;
+  }
+  /*--
+    price DINNER Start
+--*/
+  #price2 .block p {
+    padding: 40px 0px 0px;
+  }
+  #price2 .block .pricing-list {
+    text-align: left;
+  }
+  #price2 .block .pricing-list ul li .item {
+    float: none;
+  }
+  #price2 .block .pricing-list ul li .item .item-title .border-bottom {
+    display: none;
+  }
+  #price2 .block .pricing-list ul li .item .item-title span {
+    padding-top: 10px;
+    display: block;
+    float: none;
+  }
+  #price2 .block .pricing-list .btn {
     float: inherit;
     padding: 28px 100px;
   }

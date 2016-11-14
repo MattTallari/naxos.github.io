@@ -422,38 +422,38 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   border: 1px solid #ff530a;
 }
 /*--
-    price Start
+    price BREAKFAST Start
 --*/
-#price {
+#price1 {
   padding: 70px 0px;
 }
-#price .block > p {
+#price1 .block > p {
   color: #9D9D9D;
   font-size: 16px;
   line-height: 26px;
   padding: 40px 133px 0;
   text-align: center;
 }
-#price .block .pricing-list {
+#price1 .block .pricing-list {
   padding-top: 85px;
 }
-#price .block .pricing-list ul {
+#price1 .block .pricing-list ul {
   padding: 0 0 30px;
   margin: 0;
 }
-#price .block .pricing-list ul li {
+#price1 .block .pricing-list ul li {
   padding: 21px 0px;
 }
-#price .block .pricing-list ul li .item .item-title {
+#price1 .block .pricing-list ul li .item .item-title {
   position: relative;
 }
-#price .block .pricing-list ul li .item .item-title h2 {
+#price1 .block .pricing-list ul li .item .item-title h2 {
   display: inline-block;
   position: relative;
   z-index: 99;
   background: #fff;
 }
-#price .block .pricing-list ul li .item .item-title .border-bottom {
+#price1 .block .pricing-list ul li .item .item-title .border-bottom {
   position: absolute;
   top: 0;
   width: 100%;
@@ -461,15 +461,15 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   border: 1px dotted #C9C9C9;
   margin-top: 20px;
 }
-#price .block .pricing-list ul li .item .item-title span {
+#price1 .block .pricing-list ul li .item .item-title span {
   float: right;
   color: #938463;
 }
-#price .block .pricing-list ul li .item p {
+#price1 .block .pricing-list ul li .item p {
   padding: 12px 0 0px;
   color: #949494;
 }
-#price .block .pricing-list .btn {
+#price1 .block .pricing-list .btn {
   padding: 28px 105px;
   border-radius: 0px;
   background: none;
@@ -482,10 +482,77 @@ nav .block .navbar-default .navbar-nav > .active > a:hover:before {
   -o-transition: .3s all;
   transition: .3s all;
 }
-#price .block .pricing-list .btn:hover {
+#price1 .block .pricing-list .btn:hover {
   background: #ff530a;
   color: #fff;
 }
+
+/*--
+    price DINNER Start
+--*/
+#price2 {
+  padding: 70px 0px;
+}
+#price2 .block > p {
+  color: #9D9D9D;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 40px 133px 0;
+  text-align: center;
+}
+#price2 .block .pricing-list {
+  padding-top: 85px;
+}
+#price2 .block .pricing-list ul {
+  padding: 0 0 30px;
+  margin: 0;
+}
+#price2 .block .pricing-list ul li {
+  padding: 21px 0px;
+}
+#price2 .block .pricing-list ul li .item .item-title {
+  position: relative;
+}
+#price2 .block .pricing-list ul li .item .item-title h2 {
+  display: inline-block;
+  position: relative;
+  z-index: 99;
+  background: #fff;
+}
+#price2 .block .pricing-list ul li .item .item-title .border-bottom {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 1px;
+  border: 1px dotted #C9C9C9;
+  margin-top: 20px;
+}
+#price2 .block .pricing-list ul li .item .item-title span {
+  float: right;
+  color: #938463;
+}
+#price2 .block .pricing-list ul li .item p {
+  padding: 12px 0 0px;
+  color: #949494;
+}
+#price2 .block .pricing-list .btn {
+  padding: 28px 105px;
+  border-radius: 0px;
+  background: none;
+  color: #FF4F02;
+  border: 1px solid #FF4F02;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
+  transition: .3s all;
+}
+#price2 .block .pricing-list .btn:hover {
+  background: #ff530a;
+  color: #fff;
+}
+
 /*--
     subscribe Start
 --*/
