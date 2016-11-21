@@ -117,6 +117,15 @@ a:active {
   -o-transition: .3s all;
   transition: .3s all;
 }
+
+.img-portfolio {
+    margin-bottom: 30px;
+}
+
+.img-hover:hover {
+    opacity: 0.8;
+}
+
 /*============== Mixins style close ================*/
 /*--
     header-img start Start
