@@ -17,6 +17,9 @@
         <!-- Main Stylesheet -->
         <link rel="stylesheet" href="css/animate.min.css">
 
+		<!-- Animate CSS  -->
+	  <link rel="stylesheet" type="text/css" href="assets/css/animate.css" media="screen">
+
 		<link rel="stylesheet" href="css/main.css">
         <!-- Responsive Stylesheet -->
 		<link rel="stylesheet" href="css/responsive.css">
@@ -30,6 +33,10 @@
     <script src="js/plugins.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/main.js"></script>
+		<!-- Contact JS  -->
+		<script type="text/javascript" src="assets/js/jquery-min.js"></script>
+		<script type="text/javascript" src="assets/js/form-validator.min.js"></script>
+		<script type="text/javascript" src="assets/js/contact-form-script.js"></script>
 	</head>
 	<body>
 	<!--
@@ -160,8 +167,8 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="block">
-                        <img class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms" src="images/naxosLogo.jpg" alt="cooker-img">
-                        <h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms" >Welcome to<span>Naxos Grill & Bar</span> </br> Traditional <span>Greek</span> Restaurant
+                        <img class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="400ms" src="images/naxosLogo.png" alt="cooker-img">
+                        <h1 class="heading wow fadeInUp" data-wow-duration="400ms" data-wow-delay="500ms" >Welcome to <span>Naxos Grill & Bar</span> </br> Traditional <span>Greek</span> Restaurant
                         </h1>
                         <p class="wow fadeInUp" data-wow-duration="300ms" data-wow-delay="600ms">
 												Naxos Grill & Bar has been locally owned and operated since March 6th, 2007. We are pleased to delight your taste buds with our family recipes.
@@ -461,12 +468,85 @@
     ============================= -->
     <section id="contact-us">
         <div class="container">
+
+						<div class="row">
+							<div class="col-md-12">
+								<h1 class="heading wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">our <span>CONTACT US</span></h1>
+							</div>
+						</div>
+
             <div class="row">
-                <div class="col-md-12">
+                <div class="col-md-7">
                     <div class="block">
-                        <h1 class="heading wow fadeInUp" data-wow-duration="500ms" data-wow-delay="300ms">our <span>CONTACT US</span></h1>
-                        <h3 class="title wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">Sign Up for <span>Email Alerts</span> </h3>
-                        <form>
+												<!-- Start Contact Form -->
+												<form role="form" id="contactForm" class="contact-form" data-toggle="validator" class="shake">
+													<div class="form-group">
+														<div class="controls">
+															<input type="text" id="name" class="form-control" placeholder="Name" required data-error="Please enter your name">
+															<div class="help-block with-errors"></div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="controls">
+															<input type="email" class="email form-control" id="email" placeholder="Email" required data-error="Please enter your email">
+															<div class="help-block with-errors"></div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="controls">
+															<input type="text" id="msg_subject" class="form-control" placeholder="Subject" required data-error="Please enter your message subject">
+															<div class="help-block with-errors"></div>
+														</div>
+													</div>
+													<div class="form-group">
+														<div class="controls">
+															<textarea id="message" rows="7" placeholder="Massage" class="form-control" required data-error="Write your message"></textarea>
+															<div class="help-block with-errors"></div>
+														</div>
+													</div>
+
+													<button type="submit" id="submit" class="btn btn-success"></i> Send Message</button>
+													<div id="msgSubmit" class="h3 text-center hidden"></div>
+													<div class="clearfix"></div>
+
+												</form>
+										</div>
+								</div><!-- .col-md-7 close -->
+												<!-- End Contact Form -->
+
+						<section id="footer">
+								<div class="col-md-5">
+                    <div class="block wow fadeInLeft"  data-wow-delay="200ms">
+                        <div class="info">
+                            <ul>
+															  <li>
+																  <h4><i class="fa fa-clock-o"></i>Times</h4>
+															   	<p>8:00am - 12:00am</p>
+
+															  </li>
+                                <li>
+                                  <h4><i class="fa fa-phone"></i>Telephone</h4>
+                                  <p>1-(807)-475-38869</p>
+
+                                </li>
+                                <li>
+                                  <h4><i class="fa fa-map-marker"></i>Address</h4>
+                                  <p>610 West Arthur Street, Thunder Bay, Ontario, Canada</p>
+
+																</li>
+                                <li>
+                                  <h4><i class="fa fa-envelope"></i>E mail</h4>
+                                  <p>naxos@tbaytel.net - info@naxosthunderbay.com</p>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+						</section>
+
+<!-- OLD CONTACT
+											  <form>
                             <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="600ms">
                                 <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Write your full name here...">
                             </div>
@@ -478,8 +558,8 @@
                             </div>
                         </form>
                         <a class="btn btn-default wow bounceIn" data-wow-duration="500ms" data-wow-delay="1300ms" href="#" role="button">send your message</a>
-                    </div>
-                </div><!-- .col-md-12 close -->
+-->
+
             </div><!-- .row close -->
         </div><!-- .container close -->
     </section><!-- #contact-us close -->
@@ -491,7 +571,8 @@
             <div class="row">
                 <div class="col-md-7">
                     <div class="block wow fadeInLeft"  data-wow-delay="200ms">
-                        <h3>CONTACT <span>INFO</span></h3>
+											<h3>FIND <span>US</span></h3>
+                        <!-- <h3>CONTACT <span>INFO</span></h3>
                         <div class="info">
                             <ul>
                                 <li>
@@ -509,14 +590,31 @@
 
                                 </li>
                             </ul>
-                        </div>
+                        </div> -->
 												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2649.982887931195!2d-89.29769858434248!3d48.38006497924361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4d591f9690ddef4d%3A0xd88dad8511de8d95!2s610+Arthur+St+W%2C+Thunder+Bay%2C+ON+P7E+5R8!5e0!3m2!1sen!2sca!4v1479779418229" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
                 </div>
                 <!-- .col-md-4 close -->
+
                 <div class="col-md-5">
                     <div class="block wow fadeInLeft"  data-wow-delay="1100ms">
-                        <div class="gallary">
+												<div class="social-media-link">
+														<h3>FOLLOW <span>US</span></h3>
+														<ul>
+															<li>
+																	<a href="https://www.facebook.com/naxosthunderbay/">
+																			<i class="fa fa-facebook"></i>
+																	</a>
+															</li>
+															<li>
+																	<a href="#">
+																			<i class="fa fa-twitter"></i>
+																	</a>
+															</li>
+														</ul>
+												</div>
+												<br>
+												<div class="gallary">
                             <h3>PHOTO <span>STREAM</span></h3>
                             <ul>
                                 <li>
@@ -530,21 +628,6 @@
                                 </li>
                                 <li>
                                     <a href="#"><img src="images/photo/photo-4.jpg" alt=""></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="social-media-link">
-                            <h3>Follow <span>US</span></h3>
-                            <ul>
-                                <li>
-                                    <a href="https://www.facebook.com/naxosthunderbay/">
-                                        <i class="fa fa-facebook"></i>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#">
-                                        <i class="fa fa-twitter"></i>
-                                    </a>
                                 </li>
                             </ul>
                         </div>
